@@ -35,11 +35,14 @@ This repository documents my LeetCode problem-solving with explanations and code
 
 ### 🧠 Python Code
 ```python
-def twoSum(nums, target):
-    seen = {}
-    for i, num in enumerate(nums):
-        constant = target - num
-        if constant in seen:
-            return [seen[constant], i]
-        seen[num] = i
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        map = {}
+        for i in range(len(nums)):
+            complement = target-nums[i]
+            if complement in map:
+                return [i,map[complement]]
+            map[nums[i]] = i
+        return []
+        
 

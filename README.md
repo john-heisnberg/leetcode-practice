@@ -33,7 +33,7 @@ This repository documents my LeetCode problem-solving with explanations and code
 6. Continue until a valid pair is found or the array is fully traversed.
 7. Return an empty list if no valid pair exists.
 
-### 🧠 Python Code
+###  Python Code
 ```python
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:

@@ -44,5 +44,3 @@ class Solution:
                 return [i,map[complement]]
             map[nums[i]] = i
         return []
-        
-

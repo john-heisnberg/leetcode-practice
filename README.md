@@ -1,6 +1,3 @@
-# leetcode-practice
-My solutions to LeetCode problems with explanations and code
-
 # LeetCode Problem Solving
 
 This repository contains my solutions to LeetCode problems with:

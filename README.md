@@ -19,19 +19,19 @@ This repository documents my LeetCode problem-solving with explanations and code
 
 ---
 
-## 1️⃣ Two Sum (Easy)
+## 1️ Two Sum (Easy)
 
-🔗 https://leetcode.com/problems/two-sum/
+### Explanation
 
-### 💡 Explanation
-- Take the first number
-- Subtract it from the target
-- Check if the constant exists using a hash map
-- If found, return the pair
-
-### ⏱ Complexity
-- Time: O(n)
-- Space: O(n)
+1. Initialize an empty dictionary (`map`) to store numbers and their indices.
+2. Iterate through the array using an index `i`.
+3. For each element, calculate the complement:
+   complement = target - nums[i]
+4. Check if the complement already exists in the dictionary.
+- If it exists, return the current index and the stored index of the complement.
+5. If the complement is not found, store the current number as a key and its index as the value in the dictionary.
+6. Continue until a valid pair is found or the array is fully traversed.
+7. Return an empty list if no valid pair exists.
 
 ### 🧠 Python Code
 ```python
